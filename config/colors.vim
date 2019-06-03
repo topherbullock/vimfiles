@@ -101,6 +101,6 @@ augroup luan_colors
 augroup END
 
 try
-  colorscheme hybrid
+  colorscheme base16-monokai
 catch
 endtry

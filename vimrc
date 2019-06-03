@@ -1,7 +1,7 @@
 " =======================================
-" Initially based on/forked from: Jeremy Mack (@mutewinter)
-" [http://github.com/luan/vimfiles]
-" Maintained By: Luan Santos (GitHub: @luan)
+" Initially forked from: Luan Santos (GitHub: @luan)
+" [http://github.com/topherbullock/vimfiles]
+" Maintained By: Topher Bullock(GitHub: @topherbullock)
 " =======================================
 
 silent! source ~/.vimrc.local.before
@@ -17,22 +17,7 @@ runtime! config/paste.vim
 " Plugin Configuration
 " ----------------------------------------
 
-runtime! config/plugin/ack.vim
-runtime! config/plugin/airline.vim
-runtime! config/plugin/ale.vim
-runtime! config/plugin/autoformat.vim
-runtime! config/plugin/better-whitespace.vim
-runtime! config/plugin/fugitive.vim
-runtime! config/plugin/livedown.vim
-runtime! config/plugin/goyo.vim
-runtime! config/plugin/multicursor.vim
-runtime! config/plugin/ncm.vim
-runtime! config/plugin/nerdtree.vim
-runtime! config/plugin/signify.vim
-runtime! config/plugin/tagbar.vim
-runtime! config/plugin/tcomment.vim
-runtime! config/plugin/ultisnips.vim
-runtime! config/plugin/undotree.vim
+runtime! config/plugin/*.vim
 
 if has('gui_running')
   runtime! config/plugin/ctrlp.vim
