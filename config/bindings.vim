@@ -108,3 +108,13 @@ map <leader>T :call RunNearestTest()<cr>
 map <leader><space> :Vipe <CR>
 map <leader>p :VipePop <CR>
 " }}}
+
+
+" Fugitive
+map <silent> <leader>gh :Gbrowse<CR>
+map <silent> <leader>gb :Gblame<CR>
+
+" RubyJump
+"
+map <leader>rj :RubyJumpCursor<CR>
+

@@ -10,6 +10,7 @@ Plug 'majutsushi/tagbar'
 
 " A tree explorer plugin for vim
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " combine with netrw to create a delicious salad dressing
 Plug 'tpope/vim-vinegar'
@@ -236,11 +237,14 @@ endif
 
 " Language specific {{{
 " Ruby {{{
+Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'rake'] }
 Plug 'tpope/vim-rake', { 'for': ['ruby', 'rake'] }
 Plug 'tpope/vim-bundler', { 'for': ['ruby', 'rake'] }
 Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'rake'] }
 Plug 'tpope/vim-cucumber', { 'for': ['cucumber'] }
+Plug 'xmisao/rubyjump.vim', { 'for': ['ruby', 'rake'] }
+Plug 'ngmy/vim-rubocop', { 'for': ['ruby', 'rake'] }
 " }}}
 
 " Clojure {{{
@@ -313,6 +317,7 @@ Plug 'keith/rspec.vim'
 Plug 'hashivim/vim-terraform'
 Plug 'PProvost/vim-ps1'
 Plug 'ciaranm/securemodelines' " Secure modeline https://github.com/numirias/security/blob/master/doc/2019-06-04_ace-vim-neovim.md
+Plug 'janko/vim-test'
 " }}}
 " }}}
 
