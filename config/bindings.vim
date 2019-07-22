@@ -101,11 +101,12 @@ nnoremap <silent><leader><C-]> <C-w><C-]><C-w>T
 
 " Test runner {{{
 " Run this file
-map <leader>t :call RunTestFile()<cr>
+map <leader>t :TestFile<cr>
 " Run only the example under the cursor
-map <leader>T :call RunNearestTest()<cr>
+map <leader>T :TestNearest<cr>
+" map <leader>tn :call RunNearestTest()<cr>
 
-map <leader><space> :Vipe <CR>
+map <leader><space> :Vipe CR>
 map <leader>p :VipePop <CR>
 " }}}
 
@@ -118,3 +119,5 @@ map <silent> <leader>gb :Gblame<CR>
 "
 map <leader>rj :RubyJumpCursor<CR>
 
+map <silent> <leader>j 10<C-e><CR>
+map <silent> <leader>k 10<C-y><CR>

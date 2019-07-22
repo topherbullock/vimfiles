@@ -118,6 +118,9 @@ Plug 'mileszs/ack.vim'
 " Send test commands to a pipe.
 Plug 'luan/vipe', { 'do': function('InstallVipe') }
 
+" Easily interact with tmux from vim.
+Plug 'benmills/vimux'
+
 " Asynchronous Lint Engine
 Plug 'w0rp/ale'
 
