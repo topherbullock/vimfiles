@@ -10,14 +10,14 @@ let g:ale_sign_column_always = 1
 
 let g:ale_linters = {
 \   'go': ['go build', 'gofmt', 'gometalinter'],
-\   'typescript': ['tsserver', 'typecheck'],
+\   'typescript': ['tslint'],
 \   'javascript': ['eslint'],
 \   'ruby': ['rubocop'],
 \}
 
 let g:ale_fixers = {
 \   'go': ['goimports', 'gofmt'],
-\   'typescript': ['tsserver', 'typecheck'],
+\   'typescript': ['tslint'],
 \   'javascript': ['eslint'],
 \   'ruby': ['rubocop']
 \}
