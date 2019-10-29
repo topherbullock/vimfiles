@@ -176,7 +176,8 @@ Plug 'sebastianmarkow/deoplete-rust' " Rust
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " Javascript
 Plug 'Shougo/neco-syntax'
 Plug 'Shougo/neco-vim'
-let g:deoplete#enable_at_startup = 1
+
+let g:deoplete#enable_at_startup = 0
 
 " Clang based syntax highlighting for Neovim
 Plug 'arakashic/chromatica.nvim'
@@ -184,6 +185,11 @@ Plug 'arakashic/chromatica.nvim'
 if !has('nvim') || $ALL_PLUGINS ==# 'true'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+
+" use vim-prettier for pretty front-end code
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 " Provide easy code formatting in Vim by integrating existing code formatters.
 Plug 'Chiel92/vim-autoformat'
@@ -307,6 +313,9 @@ Plug 'elmcast/elm-vim', { 'for': 'elm' }
 " Rust {{{
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 " }}}
+
+" COC release branch
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Misc {{{
 Plug 'PotatoesMaster/i3-vim-syntax'

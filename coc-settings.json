@@ -1,0 +1,30 @@
+{
+  "solargraph.diagnostics": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.hover": true,
+  "solargraph.definitions": true,
+  "coc.preferences.diagnostic.displayByAle": true,
+  "solargraph.commandPath": "/Users/topherbullock/.gem/ruby/2.6.5/bin/solargraph",
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "ruby", "go"],
+  "vimlsp.debug": {
+    "default": false,
+    "description": "enable coc-vimlsp service debug",
+    "type": "boolean"
+  },
+  "vimlsp.diagnostic.enable": {
+    "default": true,
+    "description": "enable diagnostic",
+    "type": "boolean"
+  },
+  "vimlsp.trace.server": {
+    "default": "off",
+    "description": "Trace level of vim language server",
+    "enum": [
+      "off",
+      "messages",
+      "verbose"
+    ],
+    "type": "string"
+  }
+}
