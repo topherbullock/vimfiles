@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+sudo gem install neovim
+sudo npm install -g neovim
+
 pushd $HOME/.vim > /dev/null
 git pull
 ~/.vim/bin/install -u $@

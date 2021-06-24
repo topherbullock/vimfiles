@@ -9,6 +9,8 @@ let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'go': ['goimports', 'gofmt'],
 \   'typescript': ['tslint'],
+\   'go': ['go build', 'gofmt', 'golangci-lint'],
+\   'typescript': ['tsserver', 'typecheck'],
 \   'javascript': ['eslint'],
 \   'ruby': ['rubocop']
 \}
