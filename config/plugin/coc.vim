@@ -119,3 +119,4 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " " Resume latest coc list
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+let g:coc_disable_startup_warning = 1

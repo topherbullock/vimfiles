@@ -4,12 +4,15 @@
 
 " Config {{{
 if has('persistent_undo')
-  set undofile
   set undodir=~/.vim/.undo
 endif
 
 " We rely on bash for some things, make sure we use that for shelling out
 set shell=/bin/bash
+
+" Set python_host_progs
+let g:python_host_prog = '~/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '~/.pyenv/versions/neovim3/bin/python'
 
 " Prevent netrw buffers from being set as alternate
 let g:netrw_altfile = 1

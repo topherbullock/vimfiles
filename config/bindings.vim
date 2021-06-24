@@ -94,6 +94,7 @@ map <leader>YL :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%
 nnoremap <silent> <space> :noh<cr>
 nnoremap <leader>=  gg=G``
 
+" <CR> to :w
 nnoremap <unique> <expr> <CR> empty(&buftype) ? ':w<CR>' : '<CR>'
 
 nnoremap <silent><leader><C-]> <C-w><C-]><C-w>T
@@ -106,18 +107,7 @@ map <leader>t :TestFile<cr>
 map <leader>T :TestNearest<cr>
 " map <leader>tn :call RunNearestTest()<cr>
 
-map <leader><space> :Vipe CR>
-map <leader>p :VipePop <CR>
-" }}}
+map <silent> <leader>j :cp<CR>
+map <silent> <leader>k :cn<CR>
 
-
-" Fugitive
-map <silent> <leader>gh :Gbrowse<CR>
-map <silent> <leader>gb :Gblame<CR>
-
-" RubyJump
-"
-map <leader>rj :RubyJumpCursor<CR>
-
-map <silent> <leader>j 10<C-e><CR>
-map <silent> <leader>k 10<C-y><CR>
+map <leader>r :registers<CR>

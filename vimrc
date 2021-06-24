@@ -7,6 +7,9 @@
 silent! source ~/.vimrc.local.before
 
 runtime! Plug.vim
+packadd cfilter
+
+set guicursor="n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor"
 
 runtime! config/basic.vim
 runtime! config/bindings.vim
@@ -49,4 +52,3 @@ runtime! lib/autocommands.vim
 runtime! lib/watchforchanges.vim
 
 silent! source ~/.vimrc.local
-
